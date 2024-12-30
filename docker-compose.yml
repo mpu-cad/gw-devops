@@ -10,7 +10,7 @@ services:
       - "80:80"
       - "443:443"
     networks:
-      gw:
+      - gw
 
   postgres:
     image: postgres:latest
@@ -23,7 +23,7 @@ services:
     volumes:
       - postgres-data:/var/lib/postgresql/data
     networks:
-      gw:
+      - gw
 
   redis:
     image: redis:latest
@@ -34,7 +34,7 @@ services:
     volumes:
       - redis-data:/data
     networks:
-      gw:
+      - gw
 
   backend:
     image: vpbuyanov/gw-backend-go:latest
