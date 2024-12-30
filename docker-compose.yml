@@ -52,8 +52,8 @@ services:
     image: vpbuyanov/gw-frontend:latest
     container_name: frontend
     restart: unless-stopped
-    expose:
-      - 3000
+    ports:
+      - "3000:80"
     networks:
       gw:
 
