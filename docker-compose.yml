@@ -50,6 +50,15 @@ services:
     networks:
       gw:
 
+  frontend:
+    image: vpbuyanov/gw-frontend:latest
+    container_name: frontend
+    restart: unless-stopped
+    expose:
+      - 3000
+    networks:
+      gw:
+
 volumes:
   redis-data:
   server-data:
