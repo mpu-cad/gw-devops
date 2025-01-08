@@ -53,8 +53,8 @@ services:
   minio:
     image: minio/minio
     container_name: minio
-    ports:
-      - "9000:9000"
+    expose:
+      - 9000
     environment:
       MINIO_ROOT_USER: localadmin
       MINIO_ROOT_PASSWORD: localpassword
