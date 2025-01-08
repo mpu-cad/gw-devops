@@ -25,6 +25,6 @@ JWT:
   secret: ieHYGvz3MFTAponXDjhJsiPOJV0SxruO
 
 mailer:
-  name: SAPR ROAD
-  from_email_address: vpbuyanovv@gmail.com
-  from_email_password: umpuwkthejjgvssf
+  name: no reply
+  from_email_address: info@learnio.space
+  from_email_password: peeakeesobqnuumy
