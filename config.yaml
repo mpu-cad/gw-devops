@@ -15,6 +15,13 @@ server:
   port: 8080
   host: 0.0.0.0
 
+minio:
+  endpoint: minio:9000
+  access_key: localadmin
+  secret_key: localpassword
+  use_ssl: false
+
+
 JWT:
   secret: ieHYGvz3MFTAponXDjhJsiPOJV0SxruO
 
