@@ -50,6 +50,21 @@ services:
     networks:
       gw:
 
+  minio:
+    image: minio/minio
+    container_name: minio
+    ports:
+      - "9000:9000"
+    environment:
+      MINIO_ROOT_USER: localadmin
+      MINIO_ROOT_PASSWORD: localpassword
+    volumes:
+      - minio-data:/data
+    command: server /data
+    restart: unless-stopped
+    networks:
+      gw:
+
   frontend:
     image: vpbuyanov/gw-frontend:latest
     container_name: frontend
@@ -63,6 +78,7 @@ volumes:
   redis-data:
   server-data:
   postgres-data:
+  minio-data:
 
 networks:
   gw:
