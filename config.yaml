@@ -21,7 +21,6 @@ minio:
   secret_key: localpassword
   use_ssl: false
 
-
 JWT:
   secret: ieHYGvz3MFTAponXDjhJsiPOJV0SxruO
 
