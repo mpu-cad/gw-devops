@@ -57,8 +57,8 @@ services:
     container_name: frontend
     restart: unless-stopped
     volumes:
-      - - './cert/fullchain.pem:/cert/fullchain.pem'
-        - './cert/privkey.pem:/cert/privkey.pem'
+      - './cert/fullchain.pem:/cert/fullchain.pem'
+      - './cert/privkey.pem:/cert/privkey.pem'
     ports:
       - "80:80"
       - "443:443"
