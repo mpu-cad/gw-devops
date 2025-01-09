@@ -1,8 +1,8 @@
 postgres:
   host: postgres
   port: 5432
-  user: postgres
-  password: postgres
+  user: vsevolodBuyanovPavlovitch
+  password: PasswordVsevolodBuyanovPavlovitch123PasswordWsxzaq123Cxzasdewq
   dbname: gw
 
 redis:
