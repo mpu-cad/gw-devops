@@ -35,7 +35,7 @@ services:
     depends_on:
       - postgres
     networks:
-      gw:
+      - gw
 
   minio:
     image: minio/minio
@@ -50,7 +50,7 @@ services:
     command: server /data
     restart: unless-stopped
     networks:
-      gw:
+      - gw
 
   frontend:
     image: vpbuyanov/gw-frontend:latest
@@ -63,7 +63,7 @@ services:
       - "80:80"
       - "443:443"
     networks:
-      gw:
+      - gw
 
 volumes:
   redis-data:

@@ -22,13 +22,3 @@ jobs:
             cd gw-devops
             
             git pull origin main
-            
-            docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-            
-            docker stop nginx
-            
-            docker rm nginx
-            
-            docker rmi -f $(docker images -aq)
-            
-            docker compose up nginx -d
