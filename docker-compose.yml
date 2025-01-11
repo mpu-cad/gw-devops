@@ -46,7 +46,7 @@ services:
     environment:
       MINIO_ROOT_USER: localadmin
       MINIO_ROOT_PASSWORD: localpassword
-      MINIO_SERVER_URL: http://localhost:9000 # URL сервера MinIO
+      MINIO_SERVER_URL: https://learnio.space/minio # URL сервера MinIO
       MINIO_BROWSER_REDIRECT_URL: https://learnio.space/minio-ui # URL для MinIO UI
     volumes:
       - minio-data:/data
