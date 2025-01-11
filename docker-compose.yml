@@ -42,12 +42,13 @@ services:
     container_name: minio
     expose:
       - 9000
+      - 9001
     environment:
       MINIO_ROOT_USER: localadmin
       MINIO_ROOT_PASSWORD: localpassword
     volumes:
       - minio-data:/data
-    command: server /data
+    command: server /data --console-address ":9001"
     restart: unless-stopped
     networks:
       - gw
